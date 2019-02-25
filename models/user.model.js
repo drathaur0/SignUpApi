@@ -11,6 +11,17 @@ const UserSchema = mongoose.Schema({
             unique: true
         }
     },
+    is_email_verify: {
+        type: Number,
+        default : 0 // 0 = unverified 1 = verified
+    },
+    verification_code: {
+        type: String
+    },
+    forgetPasswordValidation:String,
+    password: {
+        type: String
+    },
     
     password: {
         type: String
@@ -40,10 +51,31 @@ const UserSchema = mongoose.Schema({
 	 modified_on: {
         type: Date
     },
+    device_token: {
+        type: String
+    },
+    device_type: {
+        type: Number
+    },
     user_id: {
         type: String
     },
+    latitude: {
+        type: String
+    },
+    longitude: {
+        type: String
+    },
     access_token: {
+        type: String
+    }, 
+    social_type: {
+        type: String
+    },
+    gl_social_id: {
+        type: String
+    },
+    fb_social_id: {
         type: String
     },
 });
