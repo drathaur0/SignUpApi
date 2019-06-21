@@ -16,6 +16,6 @@
     "md5": "^2.2.1",
     "mongoose": "^5.4.11",
     "nodemon": "^1.18.10",
-    "passport-google-plus-token": "^2.1.0"
+    
   }
 }
